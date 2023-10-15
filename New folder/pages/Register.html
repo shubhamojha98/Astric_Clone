@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        .form{
+            background-color: lightgrey;
+        }
+        
+    </style>
+</head>
+<body class="form">
+    <header>
+        <img src="../images/sign_up.png" height="40px">
+        <h2>Sign Up</h2>
+        <hr>
+    </header>
+    <form action="register" method="post" >
+        <table width="60%" align="center">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            <b>Registration Form:</b>
+                        </legend>
+                           <table border="1" cellspacing="0" width="100%" cellpadding="3px">
+                            <tr>
+                                <td>Full Name:</td>
+                                <td><input type="text" name="txtfullname"/></td>
+                            </tr>
+                            <tr>
+                                <td> Username:</td>
+                                <td><input type="text" name="txtusername"/></td>
+                            </tr>
+                            <tr>
+                                <td> Password:</td>
+                                <td><input type="password" name="txtpassword"/></td>
+                            </tr>      
+                            <tr>
+                                <td>Confirm Password:</td>
+                                <td><input type="password" name="txtpassword"/></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="email" name="email"/></td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td><input type="radio"name="gender" value="male">Male
+                                    <input type="radio" name="gender" value="female">Female</td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td><input type="date" name="txtdob"/></td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td><input type="number" name="txtage" min="18" max="100" step="2"/></td>
+                            </tr>
+                            <tr>
+                                <td>Highest Qualification:</td>
+                                <td><input type="radio"name="qualification" value="1">M Tech
+                                    <input type="radio" name="qualification" value="2">B Tech
+                                    <input type="radio" name="qualification" value="3">BCA
+                                    <input type="radio" name="qualification" value="4">MCA
+                                    <input type="radio" name="qualification" value="5">MBA
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hobbies:</td>
+                                <td><input type="checkbox"name="hobby[]" value="1">Dancing
+                                    <input type="checkbox" name="hobby[]" value="2">Reading
+                                    <input type="checkbox" name="hobby[]" value="3">Singing
+                                    <input type="checkbox" name="hobby[]" value="4">Surfing
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>
+                                    <select>
+                                    <option value="-1">--select city--</option>
+                                    <option value="1">Patna</option>
+                                    <option value="2">Gaya</option>
+                                    <option value="3">Nawada</option>
+                                    <option value="4">Lucknow</option>
+                                    <option value="5">Gorakhpur</option>
+                                    <option value="5">Varanasi</option>
+                                    <option value="5">Bhopal</option>
+                                    <option value="5">Indore</option>
+                                    <option value="5">Gwalior</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Job City</td>
+                                <td>
+                                    <select name="jobcity[]" multiple>
+                                    <optgroup label="Bihar">
+                                        <option value="1">Patna</option>
+                                        <option value="2">Gaya</option>
+                                        <option value="3">Nawada</option>
+                                    </optgroup>
+                                    <optgroup label="Uttar Pradesh">
+                                        <option value="4">Lucknow</option>
+                                        <option value="5">Gorakhpur</option>
+                                        <option value="5">Varanasi</option> 
+                                    </optgroup>
+                                    <optgroup label="Madhya Pradesh">
+                                        <option value="5">Bhopal</option>
+                                        <option value="5">Indore</option>
+                                        <option value="5">Gwalior</option>
+                                    </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>
+                                    <textarea name="txtAddress" rows="5" cols="20"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="profilepic">Profile Picture</label> </td>
+                                <td><input type="file" name="profilepic"/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="terms"/>
+                                I accept <a href="#">Term and Condition</a>
+                             </td>
+                                <td>
+                                    <input type="submit" name="registerbtmn" value="Register Me"/>
+                                    <!--<input type="button" name="registerbtmn" value="Register Me"/>-->
+                                    <!--Input type "image" works same as input type "submit"-->
+                                    <input type="reset" name="registerbtmn" value="clear"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td colspan="2" align="right">
+                                    Already Registered? <a href="./login.html">Sign In</a>
+                                </td>                                
+                            </tr>                      
+                           </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

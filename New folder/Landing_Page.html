@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .tr{
+          padding-left: 400px;
+
+        }
+        ul{
+            list-style: none;
+            background-color: black;
+            height: 40px;
+            border-radius: 10px;
+            
+        }
+        ul>li{
+            float: left;
+            width: 20%;
+            margin-top: 0.5%;
+        }
+        ul a{
+            color: white;
+            
+            text-decoration: none;
+            font-size: 20px;
+        }
+        #myframe{
+        width: 100%;
+        min-height:500px;
+        border: 0px;
+    }
+    footer{
+        background-color: lightgrey;
+        color:black;
+        width: 100%;
+    }
+    .th2{
+       padding-left: 100px;
+    }
+    .th3{
+        padding-left: 800px;
+    }
+    .th1{
+        padding-left:10px ;
+    }
+    .table{
+        background-color: lightslategray;
+        width: 100%;
+    } 
+    .h3{
+        padding-left: 400px;
+        text-decoration: underline;
+    }
+    .img{
+        padding-left: 10px;
+
+    }
+  
+    </style>
+
+</head>
+<body>
+    <header>
+        <table>
+        <tr padding="0%">
+            <th class="img"><img src="./images/astric.jfif" height="100px"/></th>
+            <th class="h3"><h3>Astric Centre Of Excellence</h3></th>
+            <td class="tr"><img src="./images/facebook.png" height="25px"></td>
+            <td ><img src="./images/instagram.png" height="25px"/></td>
+            <td ><img src="./images/twitter.png" height="25px"></td>
+
+        </tr>
+        </table>
+    </header>
+        <ul>
+            <li><a href="" target=""> Home</a></li>
+            <li><a href="./pages/Register.html" target="frame"> Sign Up</a></li>
+            <li><a href="./pages/login.html" target="frame"> Sign In</a></li>
+            <li><a href="./pages/contact.html" target="frame"> Contact</a></li>
+            <li><a href="./pages/AboutUs.html" target="frame"> AboutUs</a></li>
+        </ul> 
+        <div>
+            <iframe id="myframe" name="frame" src="./pages/home.html"></iframe>
+        </div> 
+        <footer>
+            <table class="table" >
+                <tr>
+                    <th class="th2"><a href="./pages/contact.html"> Contact</a></th>
+                    <th class="th3"><img src="./images/facebook.png" height="15px"> facebook</th>
+                </tr>
+                <tr>
+                    <th class="th2"><a href="./pages/AboutUs.html">About Us</a> </th>
+                    <th class="th3"><img src="./images/twitter.png" height="15px">Twitter</th>
+                </tr>
+                <tr>
+                    <th class="th2"><a href="./assignform.html">Home</a> </th>
+                    <th class="th3"><img src="./images/instagram.png"  height="15px"> Intagram</th>
+                </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <th class="th1">Copyright&copy;Astric Group, All Rights Reserved</th>
+                </tr>
+            </table>
+        </footer>
+       
+   
+</body>
+</html>
